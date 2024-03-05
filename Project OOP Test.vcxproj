@@ -62,7 +62,7 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>..\Project OOP\Project OOP\x64\Debug;..\Project OOP\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\Project OOP;..\Project OOP\Project OOP\x64\Debug;..\Project OOP\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-system-d.lib;sfml-window-d.lib;sfml-graphics-d.lib;sfml-audio-d.lib;Animator.obj;AssetManager.obj;Game.obj;GameMenu.obj;Gameplay.obj;Player.obj;SettingsValues.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -102,13 +102,19 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AnimatorTest.cpp" />
     <ClCompile Include="AssetManagerTest.cpp" />
+    <ClCompile Include="GameMenuTest.cpp" />
+    <ClCompile Include="GameplayTest.cpp" />
+    <ClCompile Include="GameTest.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="PlayerTest.cpp" />
+    <ClCompile Include="SettingsValuesTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
