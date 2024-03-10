@@ -13,7 +13,7 @@ namespace GameTest
 	{
 		Game game;
 		game.createWindow();
-		//game.mainloop(); // Failed to load font "source/fontes/Gilroy-Heavy.woff" (failed to create the font face) 
+		game.mainloop(); 
 	}
 
 	TEST(WidthAndHeight, DefaultValues)
