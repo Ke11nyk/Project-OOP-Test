@@ -3,7 +3,6 @@
 
 namespace PlayerTest
 {
-	AssetManager a;
 	sf::RenderWindow WWin;
 	std::vector<sf::String> vecTileMap = {"aaaa", "aaaa", "aaaa"};
 
