@@ -5,13 +5,13 @@ namespace AssetManagerTest
 {
 	TEST(OnlyOneAssetManager, OnlyOneAssetManager)
 	{
-		AssetManager a;
+		//AssetManager a;
 		ASSERT_DEATH(AssetManager b, "stcInstance == nullptr");
 	}
 	
 	TEST(GetFiles, GetTexture) 
 	{
-		AssetManager a;
+		//AssetManager a;
 		AssetManager::GetTexture("../Project OOP/source/images/plat.png");
 	}
 }

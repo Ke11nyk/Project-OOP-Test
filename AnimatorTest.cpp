@@ -5,6 +5,8 @@ namespace AnimatorTest
 {
 	TEST(CreateAnimation, CreateAnimation)
 	{
+		//AssetManager a;
+
 		sf::Sprite SStickSprite; ///< Sprite of the player
 		Animator StickAnim = Animator(SStickSprite);  ///< Animation of the player
 		sf::String StrTexture = "D:/Uni materials/2 course/OOP/Project OOP/source/images/figure.png"; ///< Texture of the player
