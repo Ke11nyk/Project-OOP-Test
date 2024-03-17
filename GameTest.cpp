@@ -13,6 +13,7 @@ namespace GameTest
 	{
 		Game game;
 		game.createWindow();
+		game.Close();
 		game.mainloop(); 
 	}
 
