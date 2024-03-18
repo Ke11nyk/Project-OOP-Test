@@ -5,7 +5,7 @@
 namespace PlayerTest
 {
 	sf::RenderWindow WWin;
-	std::vector<sf::String> vecTileMap = {"aaaa", "aaaa", "aaaa"};
+	std::vector<sf::String> vecTileMap = {"    ", "    ", "aaaa"};
 
 	TEST(MovePlayer, MoveLeft)
 	{
@@ -58,5 +58,20 @@ namespace PlayerTest
 		keybd_event('W', 0, KEYEVENTF_KEYUP, 0);
 	}
 
+	TEST(Collision, Collision)
+	{
+		Player stick = Player(WWin, vecTileMap, "D:/Uni materials/2 course/OOP/Project OOP/source/images/figure.png", 3);
 
+		stick.getStick().setPosition(sf::Vector2f(0, 0));
+		stick.Update(sf::seconds(0.5));
+		stick.Update(sf::seconds(0.5));
+
+		ASSERT_EQ(stick.getStick().getPosition(), sf::Vector2f(0, 0.015));
+
+		stick.Update(sf::seconds(0.5));
+		stick.Update(sf::seconds(0.5));
+
+		ASSERT_EQ(stick.getStick().getPosition(), sf::Vector2f(0, 0.045));
+
+	}
 }
