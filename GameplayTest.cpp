@@ -3,8 +3,17 @@
 
 namespace GameplayTest
 {
-	TEST(Name3, Name3)
+	TEST(CreateGameplay, CreateGameplay)
 	{
-		EXPECT_EQ(1, 1);
+		sf::RenderWindow WWin;
+		Gameplay gameplay(WWin);
+	}
+
+	TEST(LevelMenu, LevelMenu)
+	{
+		sf::RenderWindow WWin;
+		Gameplay gameplay(WWin);
+
+		gameplay.LevelMenu();
 	}
 }
