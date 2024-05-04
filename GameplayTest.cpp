@@ -6,13 +6,15 @@ namespace GameplayTest
 	TEST(CreateGameplay, CreateGameplay)
 	{
 		sf::RenderWindow WWin;
-		Gameplay gameplay(WWin);
+		GameSound gameSound;
+		Gameplay gameplay(WWin, gameSound);
 	}
 
 	TEST(LevelMenu, LevelMenu)
 	{
 		sf::RenderWindow WWin;
-		Gameplay gameplay(WWin);
+		GameSound gameSound;
+		Gameplay gameplay(WWin, gameSound);
 
 		gameplay.LevelMenu();
 	}
